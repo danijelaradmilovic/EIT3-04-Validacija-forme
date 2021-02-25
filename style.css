@@ -1,0 +1,68 @@
+body {
+    
+    background: rgb(211,132,219);
+    background: linear-gradient(90deg, rgba(211,132,219,0.8435574913559174) 0%, rgba(255,255,255,1) 98%);
+    font-family: 'Roboto', sans-serif;
+    
+}
+.form-container {
+    background-color: #fff;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #333;
+    max-width: 500px;
+}
+.form-item label {
+    display: block;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+h1 {
+    border: 0px;
+    border-bottom: 1px solid #e7bbeb;
+}
+input[type="text"], input[type="password"], input[type="submit"] {
+    width: 95%;
+    height: 20px;
+    border: 0px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+}
+input[type="submit"] {
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    background-color: #e7bbeb;
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid #e7bbeb;
+    transition: all 0.3s ease-in;
+}
+input[type="submit"]:hover {
+    background-color: #333;
+    color: #e7bbeb;
+}
+.form-item.error input {
+    border-color: red;
+}
+.form-item.success input {
+    border-color: green;
+}
+.form-item.error small {
+    color: red;
+}
+.form-item.success small {
+    color: green;
+}
+input[type="text"]::placeholder, input[type="password"]::placeholder, input[type="submit"]::placeholder {
+        color: #e7bbeb;
+}
